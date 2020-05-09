@@ -21,7 +21,7 @@ if (window.innerWidth > limit) {
     $("li#one").on("click", liOneChange);
     $("li#two").on("click", liTwoChange);
     $("li#three").on("click", liThreeChange);
-    document.addEventListener("wheel", throttle(scrollChange, 300));
+    document.addEventListener("wheel", throttle(scrollChange, 1000));
     //button one
     function liOneChange() {
       $(".pagetwo").animate(
